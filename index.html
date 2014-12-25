@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+  #shadow-root
+    <shadow></shadow>
+    <style type = "text/css"></style>
   <head>
+    <meta name="description" content="My name is Ricky Rajani and I'm a freshmen at the University of Pennsylvania.  This is my personal website.">
+    <meta name="author" content="Ricky Rajani">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ricky Rajani</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href = "functions.css" rel = "stylesheet" media = "screen"> 
+    <link href = "functions.css" rel = "stylesheet" media = "screen">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#home_link").click(function(){
+                $("#art").hide();
+                $("#programming").hide();
+                $("#blog").hide();
+                $("#resume").hide();
+                $("#about").fadeIn("slow");
+            });
+            $("#art_link").click(function(){
+                $("#about").hide();
+                $("#programming").hide();
+                $("#blog").hide();
+                $("#resume").hide();
+                $("#art").fadeIn("slow");
+            });
+            $("#programming_link").click(function(){
+                $("#about").hide();
+                $("#art").hide();
+                $("#blog").hide();
+                $("#resume").hide();
+                $("#programming").fadeIn("slow");
+            });
+            $("#blog_link").click(function(){
+                $("#about").hide();
+                $("#art").hide();
+                $("#programming").hide();
+                $("#resume").hide();
+                $("#blog").fadeIn("slow");
+            });
+            $("#resume_link").click(function(){
+                $("#about").hide();
+                $("#art").hide();
+                $("#programming").hide();
+                $("#blog").hide();
+                $("#resume").fadeIn("slow");
+            });
+          });
+        </script> 
   </head>
   <body>
     <div class = "container" id = "greeting-container">
@@ -24,31 +69,72 @@
       ::after
     </div>
     <div id = "project-outer-container">
-      <div class = "row" id = "project-toggles">
+<!--       <div class = "row" id = "project-toggles">
         ::before
         <ul>
           <li>
-            <a class = "active" id = "about_">About</a>
+            <a class = "active" id = "about_">Home</a>
           </li>
           <li>
-            <a class = "active" id = "photography_">Photography</a>
+            <a class = "active" id = "photography_">Art</a>
           </li>
           <li>
-            <a class = "active" id = "sculpture_">Sculpture</a>
+            <a class = "active" id = "sculpture_">Programming</a>
           </li>
           <li>
-            <a class = "active" id = "graphic_">Graphic Design</a>
+            <a class = "active" id = "graphic_">Blog</a>
           </li>
           <li>
-            <a class = "active" id = "animation_">Animation</a>
-          </li>
-          <li>
-            <a class = "active" id = "illustration_">Illustration/Painting</a>
+            <a class = "active" id = "animation_">Resume</a>
           </li>
         </ul>
         ::after
+      </div> -->
+      <div id = "floater" style = "top: 0px; position: fixed;">
+        <ul>
+          <li>
+            <a href = "#" id = "home_link">Home</a>
+          </li>
+          <li>
+            <a href = "#" id = "art_link">Art</a>
+          </li>
+          <li>
+            <a href = "#" id = "programming_link">Programming</a>
+          </li>
+          <li>
+            <a href = "#" id = "blog_link">Blog</a>
+          </li>
+          <li>
+            <a href = "#" id = "resume_link">Resume</a>
+          </li>
+        </ul>
       </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <div id = "about" style = "display: none;">
+        <p> "aspiring artist, inventor, and dreamer"</p>
+      </div>
+      <div id = "art" style = "display:none;">
+        <p> "[insert art]"</p>
+      </div>
+      <div id = "programming" style = "display:none;">
+        <p> "[insert projects]"</p>
+      </div>
+      <div id = "blog" style = "display:none;">
+        <p> "[insert blog]"</p>
+      </div>
+      <div id = "resume" style = "display:none;">
+        <p> "[insert resume link]"</p>
+      </div>
+      <div class = "container" id = "contact-container">
+        <div class = "row title">
+          <a href = "mailto:rickys.rajani@gmail.com?Subject=Hello%20" target="_top"><font color="888888">want to chat?</font></a>
+        </div>
+        <div class = "row more-contact">
+          <a href = "https://github.com/rickyrajani/"><font color="888888">github</font></a>
+          ||
+          <a href = "https://www.linkedin.com/pub/ricky-rajani/73/64b/b25"><font color="888888">linkedin</font></a>
+        </div>
+      </div>
     <script src="js/bootstrap.min.js"></script>    
   </body>
-</html>
+</html> 
+

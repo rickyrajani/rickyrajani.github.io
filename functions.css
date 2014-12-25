@@ -1,3 +1,9 @@
+/*/*!
+ * Bootstrap v3.2.0 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
 /*!
  * Bootstrap v3.2.0 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
@@ -25,18 +31,11 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-h1 {
-	text-align: center; 
-	color: black; 
-	font: normal 
-	40pt "Arial Black"
-}
-
 div {
 	display: block;
 }
 
-html,body {
+html, body {
 	height:100%;
 	-webkit-touch-callout:none;
 	-webkit-user-select:none;
@@ -44,20 +43,43 @@ html,body {
 	-moz-user-select:none;
 	-ms-user-select:none;
 	user-select:none;
-	font-family:'Lucida Console', Monaco, monospace;
+	font-family:"Book Antiqua", Palatino, serif;
 	font-weight: 300;
 	background-color: #4FBCC5;
 	color: #4FBCC5
 }
 
-#greeting,#project-toggles,.noproject,.description>div,.description>a,#contact-container,#floater{
-	text-transform: lowercase;
-	font-family:"Book Antiqua", Palatino, serif
+p {
+	height:100%;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	font-family:"Book Antiqua", Palatino, serif;
+	font-weight: 300;
+	color: #FFFFFF;
+	position: center
 }
 
-#nav {
-	margin-bottom: 0;
-	background-color: rgba(248,248,248,0.5)
+#greeting,#project-toggles, #contact-container,#floater{
+	text-transform: lowercase;
+	font-family:"Book Antiqua", Palatino, serif
+	text-align:center;
+}
+
+.gravatar {
+	position:relative;
+	left: 550px;
+	overflow: hidden;
+	width: 100px;
+	height: 100px;
+	-moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 20%;
+    margin: 00;
+    float: center
 }
 
 .row {
@@ -65,7 +87,7 @@ html,body {
 }
 
 .title {
-	font-size:80px
+	font-size:40px
 }
 
 #greeting-container {
@@ -81,17 +103,27 @@ html,body {
 }
 
 #hello {
-	font-size: 60px
+	font-size: 80px
 }
 
 .firstname {
 	color: #FFFFFF;
 }
 
-span.firstname {}
-
 .lastname {
 	color: #FFFFFF;
+}
+a:link {
+    color:#b58aa5;
+    text-decoration: none;
+}
+
+a:visited{
+    color:#b58aa5;
+}
+
+a:hover{
+    color:white;
 }
 
 #project-outer-container {
@@ -103,13 +135,13 @@ span.firstname {}
 }
 
 #floater {
-	position: absolute;
-	width: 100%;
-	padding-top: 30px;
-	padding-bottom: 20px;
-	border-top: 1px solid #1b1b1b;
-	background-color: #0f0f0f;
-	z-index: 20
+    position: absolute;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-top: 1px solid #1b1b1b;
+    background-color: #4FBCC5;
+    z-index: 20;
 }
 
 #project-toggles {
@@ -142,3 +174,39 @@ span.firstname {}
 	color: #FFFFFF;
 	text-shadow:.5px 0 0 #FFFFFF
 }
+
+#contact-container {
+	background-color: #4FBCC5;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 25px;
+	margin: 0;
+	width: 100%
+}
+
+#about{
+    margin-left:525px;
+    margin-right:400px;
+/*    position: center*/
+}
+
+#art{
+    margin-left:525px;
+    margin-right:400px;
+}
+
+#programming{
+    margin-left:525px;
+    margin-right:400px;
+}
+
+#blog{
+    margin-left:525px;
+    margin-right:400px;
+}
+
+#resume{
+    margin-left:525px;
+    margin-right:400px;
+}
+
