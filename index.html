@@ -12,6 +12,7 @@
     <title>Ricky Rajani</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href = "functions.css" rel = "stylesheet" media = "screen">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
@@ -52,13 +53,18 @@
             });
           });
         </script> 
+        <script src="js/bootstrap.min.js">
+          $(document).ready(function(){
+            $('.carousel').carousel();
+        });
+        </script>
   </head>
   <body>
     <div class = "container" id = "greeting-container">
       ::before
       <div class = "row" id = "greeting">
         ::before
-        <div class = "col-lg-12">
+        <div class = "col-lg-12" style = "opacity: 1;">
           <span id= "hello">
             <span class = "firstname">Ricky</span>
             <span class = "lastname">Rajani</span>
@@ -69,7 +75,53 @@
       ::after
     </div>
     <div id = "project-outer-container">
-<!--       <div class = "row" id = "project-toggles">
+      <div class = "row" id = "floater" style = "top: 0px; position: fixed">
+        <ul>
+          <li>
+            <a href = "#" id = "home_link">Home</a>
+          </li>
+          <li>
+            <a href = "#" id = "art_link">Art</a>
+          </li>
+          <li>
+            <a href = "#" id = "programming_link">Programming</a>
+          </li>
+          <li>
+            <a href = "http://rickyrajani.wordpress.com/" id = "blog_link" target = "none">Blog</a>
+          </li>
+          <li>
+            <a href = "#" id = "resume_link">Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class = "container" id = "about" style = "display: none;">
+       <p> aspiring artist, inventor, and dreamer</p>
+     </div>
+     <div class = "container" id = "art" style = "display:none;">
+        <p> "[insert art]"</p>
+     </div>
+     <div class = "container" id = "programming" style = "display:none;">
+       <p> "[insert projects]"</p>
+     </div>
+     <div class = "container" id = "blog" style = "display:none;">
+       <p> "[insert blog]"</p>
+     </div>
+     <div class = "container" id = "resume" style = "display:none;">
+       <p> "[insert resume link]"</p>
+     </div>
+     <div class="row">
+     <div class = "container" id = "contact-container">
+       <div class = "row title">
+         <a href = "mailto:rickys.rajani@gmail.com?Subject=Hello%20" target="_top"><font color="3E6DA3">want to chat?</font></a>
+       </div>
+       <div class = "row more-contact">
+         <a href = "https://github.com/rickyrajani/"><font color="3E6DA3">github</font></a>
+         ||
+         <a href = "https://www.linkedin.com/pub/ricky-rajani/73/64b/b25"><font color="3E6DA3">linkedin</font></a>
+       </div>
+     </div>
+<!--       <div class = "row">
         ::before
         <ul>
           <li>
@@ -90,51 +142,7 @@
         </ul>
         ::after
       </div> -->
-      <div id = "floater" style = "top: 0px; position: fixed;">
-        <ul>
-          <li>
-            <a href = "#" id = "home_link">Home</a>
-          </li>
-          <li>
-            <a href = "#" id = "art_link">Art</a>
-          </li>
-          <li>
-            <a href = "#" id = "programming_link">Programming</a>
-          </li>
-          <li>
-            <a href = "#" id = "blog_link">Blog</a>
-          </li>
-          <li>
-            <a href = "#" id = "resume_link">Resume</a>
-          </li>
-        </ul>
-      </div>
-      <div id = "about" style = "display: none;">
-        <p> "aspiring artist, inventor, and dreamer"</p>
-      </div>
-      <div id = "art" style = "display:none;">
-        <p> "[insert art]"</p>
-      </div>
-      <div id = "programming" style = "display:none;">
-        <p> "[insert projects]"</p>
-      </div>
-      <div id = "blog" style = "display:none;">
-        <p> "[insert blog]"</p>
-      </div>
-      <div id = "resume" style = "display:none;">
-        <p> "[insert resume link]"</p>
-      </div>
-      <div class = "container" id = "contact-container">
-        <div class = "row title">
-          <a href = "mailto:rickys.rajani@gmail.com?Subject=Hello%20" target="_top"><font color="888888">want to chat?</font></a>
-        </div>
-        <div class = "row more-contact">
-          <a href = "https://github.com/rickyrajani/"><font color="888888">github</font></a>
-          ||
-          <a href = "https://www.linkedin.com/pub/ricky-rajani/73/64b/b25"><font color="888888">linkedin</font></a>
-        </div>
-      </div>
-    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/bootstrap.min.js"></script>  
   </body>
 </html> 
 

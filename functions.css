@@ -59,11 +59,12 @@ p {
 	user-select:none;
 	font-family:"Book Antiqua", Palatino, serif;
 	font-weight: 300;
+	font-size: 20px;
 	color: #FFFFFF;
 	position: center
 }
 
-#greeting,#project-toggles, #contact-container,#floater{
+#greeting, #project-toggles, #contact-container, #floater, #byline{
 	text-transform: lowercase;
 	font-family:"Book Antiqua", Palatino, serif
 	text-align:center;
@@ -103,7 +104,11 @@ p {
 }
 
 #hello {
-	font-size: 80px
+	font-size: 80px;
+	-webkit-margin-before: 0.67em;
+	-webkit-margin-after: 0.67em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px
 }
 
 .firstname {
@@ -113,17 +118,18 @@ p {
 .lastname {
 	color: #FFFFFF;
 }
+
 a:link {
-    color:#b58aa5;
+    color: #b58aa5;
     text-decoration: none;
 }
 
 a:visited{
-    color:#b58aa5;
+    color: #3E6DA3;
 }
 
 a:hover{
-    color:white;
+    color: white;
 }
 
 #project-outer-container {
@@ -133,8 +139,8 @@ a:hover{
 	border-top: 1px solid #4FBCC5;
 	border-bottom: 1px solid #4FBCC5
 }
-
-#floater {
+/*
+.byline {
     position: absolute;
     width: 100%;
     padding-top: 30px;
@@ -142,36 +148,65 @@ a:hover{
     border-top: 1px solid #1b1b1b;
     background-color: #4FBCC5;
     z-index: 20;
+    font-size: 40px;
+    cursor: pointer;
+    letter-spacing: 2px;
+	text-align: center;
+	animation: fadeInUp .75s ease;
+	-webkit-animation: fadeInUp .75s ease;
+	animation-delay: .25s;
+	-webkit-animation-delay: .25s;
+	animation-fill-mode: both;
+	-webkit-animation-fill-mode: both;}*/
+
+#floater{
+    position: absolute;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-top: 1px solid #1b1b1b;
+    background-color: #4FBCC5;
+    z-index: 20;
+    font-size: 40px;
+    cursor: pointer;
+    letter-spacing: 2px;
+	text-align: center;
+	animation: fadeInUp .75s ease;
+	-webkit-animation: fadeInUp .75s ease;
+	animation-delay: .25s;
+	-webkit-animation-delay: .25s;
+	animation-fill-mode: both;
+	-webkit-animation-fill-mode: both;
 }
 
 #project-toggles {
 	margin-bottom:0
 }
 
-#project-toggles ul, #floater ul {
+#project-toggles ul, #floater ul, #byline ul{
 	padding-left: 0; 
 	text-align: center
 }
 
-#project-toggles li, #floater li {
+#project-toggles li, #floater li, #byline li {
 	display: inline-block;
 	padding-left: 15px;
 	padding-right: 15px;
 	font-size: 20px
 }
 
-#project-toggles a, #floater a {
-	color: #FFFFFF;
+#project-toggles a, #floater a, #byline a {
+/*	color: #FFFFFF;*/
 	letter-spacing: 1px
 }
 
-#project-toggles a:hover, #floater a:hover {
+#project-toggles a:hover, #floater a:hover, #byline a:hover {
 	text-decoration: none;
 	cursor: pointer
 }
 
-#project-toggles .active, #floater .active {
-	color: #FFFFFF;
+#project-toggles .active, #floater .active, #byline .active {
+/*	color: #FFFFFF;*/
 	text-shadow:.5px 0 0 #FFFFFF
 }
 
@@ -185,28 +220,47 @@ a:hover{
 }
 
 #about{
-    margin-left:525px;
-    margin-right:400px;
-/*    position: center*/
+	background-color: #4FBCC5;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 25px;
+	margin: 0;
+	width: 100%
 }
 
 #art{
-    margin-left:525px;
-    margin-right:400px;
+    background-color: #4FBCC5;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 25px;
+	margin: 0;
+	width: 100%
 }
 
 #programming{
-    margin-left:525px;
-    margin-right:400px;
+    background-color: #4FBCC5;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 25px;
+	margin: 0;
+	width: 100%
 }
 
 #blog{
-    margin-left:525px;
-    margin-right:400px;
+    background-color: #4FBCC5;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 25px;
+	margin: 0;
+	width: 100%
 }
 
 #resume{
-    margin-left:525px;
-    margin-right:400px;
+    background-color: #4FBCC5;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 25px;
+	margin: 0;
+	width: 100%
 }
 
