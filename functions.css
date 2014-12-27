@@ -43,7 +43,7 @@ html, body {
 	-moz-user-select:none;
 	-ms-user-select:none;
 	user-select:none;
-	font-family:"Book Antiqua", Palatino, serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 300;
 	background-color: #4FBCC5;
 	color: #4FBCC5
@@ -57,16 +57,17 @@ p {
 	-moz-user-select:none;
 	-ms-user-select:none;
 	user-select:none;
-	font-family:"Book Antiqua", Palatino, serif;
-	font-weight: 300;
-	font-size: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;
+	font-size: 16px;
 	color: #FFFFFF;
-	position: center
+	position: center;
+	display: block
 }
 
-#greeting, #project-toggles, #contact-container, #floater, #byline{
+#greeting, #project-toggles, #contact-container, #floater {
 	text-transform: lowercase;
-	font-family:"Book Antiqua", Palatino, serif
+	font-family: 'Source Sans Pro', sans-serif;
 	text-align:center;
 }
 
@@ -83,18 +84,12 @@ p {
     float: center
 }
 
-.row {
-	margin-bottom:20px
-}
-
 .title {
 	font-size:40px
 }
 
 #greeting-container {
 	margin-top: 80px;
-	padding-bottom: 20px;
-	padding-bottom: 0
 }
 
 #greeting {
@@ -139,27 +134,8 @@ a:hover{
 	border-top: 1px solid #4FBCC5;
 	border-bottom: 1px solid #4FBCC5
 }
-/*
-.byline {
-    position: absolute;
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    border-top: 1px solid #1b1b1b;
-    background-color: #4FBCC5;
-    z-index: 20;
-    font-size: 40px;
-    cursor: pointer;
-    letter-spacing: 2px;
-	text-align: center;
-	animation: fadeInUp .75s ease;
-	-webkit-animation: fadeInUp .75s ease;
-	animation-delay: .25s;
-	-webkit-animation-delay: .25s;
-	animation-fill-mode: both;
-	-webkit-animation-fill-mode: both;}*/
 
-#floater{
+#floater {
     position: absolute;
     width: 100%;
     padding-top: 30px;
@@ -183,30 +159,28 @@ a:hover{
 	margin-bottom:0
 }
 
-#project-toggles ul, #floater ul, #byline ul{
+#project-toggles ul, #floater ul {
 	padding-left: 0; 
 	text-align: center
 }
 
-#project-toggles li, #floater li, #byline li {
+#project-toggles li, #floater li {
 	display: inline-block;
 	padding-left: 15px;
 	padding-right: 15px;
 	font-size: 20px
 }
 
-#project-toggles a, #floater a, #byline a {
-/*	color: #FFFFFF;*/
+#project-toggles a, #floater a {
 	letter-spacing: 1px
 }
 
-#project-toggles a:hover, #floater a:hover, #byline a:hover {
+#project-toggles a:hover, #floater a:hover {
 	text-decoration: none;
 	cursor: pointer
 }
 
-#project-toggles .active, #floater .active, #byline .active {
-/*	color: #FFFFFF;*/
+#project-toggles .active, #floater .active {
 	text-shadow:.5px 0 0 #FFFFFF
 }
 
@@ -223,9 +197,8 @@ a:hover{
 	background-color: #4FBCC5;
 	color: #FFFFFF;
 	text-align: center;
-	padding: 25px;
-	margin: 0;
-	width: 100%
+	padding-top: 0px;
+	width: 100%;
 }
 
 #art{
@@ -264,3 +237,87 @@ a:hover{
 	width: 100%
 }
 
+.item {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 320px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	text-align: left;
+	vertical-align: top;
+	height: 380px;
+}
+
+#projects {
+	text-align: center;
+	margin-top: 120px;
+	margin-bottom: 100px;
+}
+
+.collection .underline_divider {
+	margin-bottom: 120px;
+}
+
+.underline_divider {
+	text-align: center;
+	border-bottom: 10px solid #2d3038;
+	width: 90px;
+	margin: 10px 10px 10px 10px;
+	margin-bottom: 80px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.item .image {
+	display: inline;
+}
+
+.image img {
+	height: 200px;
+	border: 1px solid #EDEDED;
+}
+
+.img-responsive {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+.item p, .item h2 {
+	font-size: 15px;
+	color: #3E6DA3;
+}
+
+img {
+	vertical-align: middle;
+	border: 0;
+}
+
+h1 {
+	color: #555;
+	display: block;
+	font-size: 2em;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	font-weight: normal;
+}
+
+h2, .h2 {
+	line-height: 1.1;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.sub-content {
+	width: 640px;
+	text-align: center;
+	display: none;
+	padding-bottom: 50px;
+}
+
+.sub-content p {
+	color: #555;
+}
