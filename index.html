@@ -29,6 +29,9 @@
                 $("#blog").hide();
                 $("#resume").hide();
                 $("#art").fadeIn("slow");
+                $("#draw").hide();
+                $("#sculpture").hide();
+                $("#graphic").hide();
             });
             $("#programming_link").click(function(){
                 $("#about").hide();
@@ -51,12 +54,27 @@
                 $("#blog").hide();
                 $("#resume").fadeIn("slow");
             });
+            $("#graphic-link").click(function(){
+              $("#draw").hide();
+              $("#sculpture").hide();
+              $("#graphic").fadeIn("slow");
+            });
+            $("#draw-link").click(function(){
+              $("#graphic").hide();
+              $("#sculpture").hide();
+              $("#draw").fadeIn("slow");
+            });
+            $("#sculpture-link").click(function(){
+              $("#graphic").hide();
+              $("#draw").hide();
+              $("#sculpture").fadeIn("slow");
+            });
           });
         </script> 
         <script src="js/bootstrap.min.js"></script>
   </head>
   <body>
-    <div class = "container" id = "greeting-container">
+    <div id = "greeting-container">
       ::before
       <div class = "row" id = "greeting">
         ::before
@@ -68,8 +86,7 @@
         </div>
         ::after
       </div>
-    </div>
-    <div id = "project-outer-container">
+    <div>
       <div class = "row" id = "floater" style = "top: 0px; position: fixed">
         <ul>
           <li>
@@ -82,7 +99,7 @@
             <a href = "#" id = "programming_link">Programming</a>
           </li>
           <li>
-            <a href = "http://rickyrajani.wordpress.com/" id = "blog_link" target = "none">Blog</a>
+            <a href = "#" id = "blog_link">Blog</a>
           </li>
           <li>
             <a href = "#" id = "resume_link">Resume</a>
@@ -90,64 +107,248 @@
         </ul>
       </div>
     </div>
-    <div class = "sub-content" id = "about" style = "display: none;">
+    <div class = "about-content" id = "about" style = "display: none;">
       <h1> Hi there, I'm Ricky</h1>
       <p> I'm a freshmen studying 
         <a target = "blank_" href = "http://cg.cis.upenn.edu/dmd_program.html">Digital Media Design</a> 
-         at the University of Pennsylvania. I love good food, books, design, and traveling. I make art, take photos, and write about 
+         at the University of Pennsylvania. I love good food, books, design, and traveling. I make art, take 
+        <a target = "blank_" href = "http://rickyrajani.tumblr.com/">photos</a>
+         , and write about 
         <a target = "blank_" href = "http://genheration.com/tech-talk/">tech</a>
         in my free time.
+      </p>
+      <p>
         <a target = "blank_" href = "mailto:rickys.rajani@gmail.com?Subject=Hello%20"><font color="3E6DA3">Want to chat?</font></a>
       </p>
+      <br>
       <h1>Find me on:</h1>
          <a href = "https://github.com/rickyrajani/"><font color="3E6DA3">github</font></a>
          ||
          <a href = "https://www.linkedin.com/pub/ricky-rajani/73/64b/b25"><font color="3E6DA3" >linkedin</font></a>
     </div>
-    <div class = "container" id = "art" style = "display:none;">
-      <p> "[insert art]"</p>
-    </div>
-    <div class = "container" id = "programming" style = "display:none;">
-<!--        <p> "[insert projects]"</p> -->
-       <!-- <div class = "collection" id = "projects">
-         <h1>projects</h1>
+    <div id = "art" style = "display: none;">
+       <div id = "graphic-link">
+         <h6>graphic design</h6>
        </div>
-       <div class = "underline_divider"></div> -->
-       <div class = "item">
-         <div class = "image">
-           <img class = "img-responsive" src = "http://pennlabs.org/img/screenshots/pcr.png">
-         </div>
-       <h2>OCaml Paint GUI</h2>
-       <p>Explain the horrors of creating the paint program</p>  
-     </div>
-     <div class = "item">
-         <div class = "image">
-           <img class = "img-responsive" src = "http://pennlabs.org/img/screenshots/pcr.png">
-         </div>
-       <h2>OCaml Paint GUI</h2>
-       <p>Explain the horrors of creating the paint program</p>  
-     </div>
-     <div class = "item">
-         <div class = "image">
-           <img class = "img-responsive" src = "http://pennlabs.org/img/screenshots/pcr.png">
-         </div>
-       <h2>OCaml Paint GUI</h2>
-       <p>Explain the horrors of creating the paint program</p>  
-     </div>
-     <div class = "item">
-         <div class = "image">
-           <img class = "img-responsive" src = "http://pennlabs.org/img/screenshots/pcr.png">
-         </div>
-       <h2>OCaml Paint GUI</h2>
-       <p>Explain the horrors of creating the paint program</p>  
-     </div>
+      <div class = "underline_divider"></div>
+      <div id = "graphic" style = "display">
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Graphic Design/RICKY_RAJANI_DIGITAL_AYVOWATER.jpg">
+          </div>
+          <h2>Ayvo Water</h2>
+          <p>logo design</p>  
+        </div>
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Graphic Design/RICKY_RAJANI_DIGITAL_MU.jpg">
+          </div>
+          <h2>Mu</h2>
+          <p>album cover</p>  
+        </div>
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Graphic Design/RICKY_RAJANI_DIGITAL_MYSTIFIER.jpg">
+          </div>
+          <h2>Mystifier</h2>
+          <p>movie poster</p>  
+        </div>
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Graphic Design/RICKY_RAJANI_DIGITAL_VITRIOLIC.jpg">
+          </div>
+          <h2>Vitriolic</h2>
+          <p>album cover</p>  
+        </div>
+      </div>
+      <div id = "draw-link">
+        <h6>drawing</h6>
+      </div>
+      <div class = "underline_divider"></div>
+      <div id = "draw">
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Drawing Painting/RICKY_RAJANI_CHARCOAL.jpg">
+          </div>
+        </div>
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Drawing Painting/RICKY_RAJANI_CHARCOAL_FIGURE.jpg">
+          </div>
+        </div>
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Drawing Painting/RICKY_RAJANI_CHARCOAL2.jpg">
+          </div>
+        </div>
+      </div>
+      <div id = "sculpture-link">
+        <h6>sculpture</h6>
+      </div>
+      <div class = "underline_divider"></div>
+      <div id = "sculpture">  
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Sculpture/Sculpture2 View1.jpg">
+          </div>
+          <h2>Medusa on a Plate</h2>
+          <p>clay and metal</p> 
+        </div>
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Sculpture/Sculpture1 View2.jpg">
+          </div>
+          <h2>Iceberg</h2>
+          <p>paper</p> 
+        </div>
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Sculpture/Sculpture1 View1.jpg">
+          </div>
+          <h2> </h2>
+          <p> </p> 
+        </div>
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Sculpture/C7.jpg">
+          </div>
+          <h2>Frog</h2>
+          <p>clay and wood</p> 
+        </div>
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Sculpture/Concentration5.jpg">
+          </div>
+          <h2>Volcano</h2>
+          <p>clay</p> 
+        </div>
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Sculpture/Sculpture6.jpg">
+          </div>
+          <h2>Dragon Egg</h2>
+          <p>plaster</p> 
+        </div>
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Sculpture/DSC_1392.JPG">
+          </div>
+          <h2>Industrialization</h2>
+          <p>clay</p> 
+        </div>
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Sculpture/DSC_1418.JPG">
+          </div>
+          <h2>Jungle</h2>
+          <p>clay</p>
+        </div>
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Sculpture/breadth2 view2.jpg">
+          </div>
+          <h2>Open Book</h2>
+          <p>paper</p>
+        </div>
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Sculpture/C8.jpg">
+          </div>
+          <h2>Hands All Over</h2>
+          <p>plaster</p>
+        </div>
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Sculpture/quality1view2.jpg">
+          </div>
+          <h2>Penny</h2>
+          <p>plaster</p>
+        </div>
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Sculpture/Ricky_Rajani_Plaster5.jpg">
+          </div>
+          <h2>Untitled</h2>
+          <p>plaster</p>
+        </div>
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Sculpture/Ricky_Rajani_Plaster6.jpg">
+          </div>
+          <h2>Untitled</h2>
+          <p>plaster</p>
+        </div>
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Sculpture/plaster breadth2 (2).jpg">
+          </div>
+          <h2></h2>
+          <p></p>
+        </div>
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Sculpture/Ricky_Rajani_Clay6.jpg">
+          </div>
+          <h2>Insanity</h2>
+          <p>clay</p>
+        </div>
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Sculpture/Ricky_Rajani_Clay9.jpg">
+          </div>
+          <h2>Blossoming</h2>
+          <p>clay</p>
+        </div>
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Sculpture/C3.jpg">
+          </div>
+          <h2>Untitled</h2>
+          <p>paper</p>
+        </div>
+        <div class = "item-art">
+          <div class = "image">
+            <img class = "img-responsive" src = "portfolio/Sculpture/Ricky_Rajani_Clay8.jpg">
+          </div>
+          <h2>Gold Rush</h2>
+          <p>clay</p>
+        </div>
+      </div>
+    </div>
+    <div id = "programming" style = "display:none;">
+    <div class = "item">
+      <div class = "image">
+        <img class = "img-responsive" src = "project images/personal.png">
+      </div>
+      <h2>This Website:</h2>
+      <h4>HTML, CSS, jQuery</h4>
+      <p>An ongoing project of building my personal website from scratch.</p>  
+    </div>
+    <div class = "item">
+      <div class = "image">
+        <img class = "img-responsive" src = "project images/PCD.png">
+      </div>
+      <h2>Peace Corps Dashboard:</h2>
+      <h4>HTML and CSS</4>
+      <p>Front-end developer for a web application that assists the Peace Corps in keeping tracking of their contributions to OpenStreetMap.</p>
+    </div>
+    <div class = "item">
+      <div class = "image">
+        <img class = "img-responsive" src = "project images/Snake.jpg">
+      </div>
+      <h2>Snake Game:</h2>
+      <h4>Java</h4>
+      <p>The final project of the Programming Languanges and Techniques I course at Penn and my first Java game. Implementation of a 2-D array, with multiple game pieces, levels and a maze mode.</p>  
+    </div>
    </div>
-     <div class = "container" id = "blog" style = "display:none;">
-       <p> "[insert blog]"</p>
-     </div>
-     <div class = "container" id = "resume" style = "display:none;">
-       <a target = "blank_" href = "Rajani_Ricky_Resume.pdf"></a>
-     </div>
+   <div id = "blog" style = "display:none;">
+     <h1>Coming Soon</h1>
+     <p>For now, you can check out my blog on
+       <a target = "blank_" href = "http://rickyrajani.wordpress.com/">wordpress.</a>
+     </p>
+   </div>
+   <div id = "resume" style = "display:none;">
+   </div>
 <!--      <div class = "container" id = "contact-container">
        <div class = "row title">
          <a href = "mailto:rickys.rajani@gmail.com?Subject=Hello%20" target="_top"><font color="3E6DA3">want to chat?</font></a>
