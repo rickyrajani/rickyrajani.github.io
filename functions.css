@@ -65,27 +65,10 @@ p {
 	display: block
 }
 
-#greeting, #project-toggles, #contact-container, #floater {
+#greeting, #contact-container, #floater {
 	text-transform: lowercase;
 	font-family: 'Source Sans Pro', sans-serif;
 	text-align:center;
-}
-
-.gravatar {
-	position:relative;
-	left: 550px;
-	overflow: hidden;
-	width: 100px;
-	height: 100px;
-	-moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 20%;
-    margin: 00;
-    float: center
-}
-
-.title {
-	font-size:40px
 }
 
 #greeting-container {
@@ -103,15 +86,16 @@ p {
 	-webkit-margin-before: 0.67em;
 	-webkit-margin-after: 0.67em;
 	-webkit-margin-start: 0px;
-	-webkit-margin-end: 0px
+	-webkit-margin-end: 0px;
+	cursor: pointer;
 }
 
 .firstname {
-	color: #FFFFFF;
+	color: white;
 }
 
 .lastname {
-	color: #FFFFFF;
+	color: white;
 }
 
 a:link {
@@ -140,48 +124,27 @@ a:hover{
     width: 100%;
     padding-top: 30px;
     padding-bottom: 20px;
-    border-top: 1px solid #1b1b1b;
     background-color: #4FBCC5;
     z-index: 20;
     font-size: 40px;
     cursor: pointer;
     letter-spacing: 2px;
 	text-align: center;
-	animation: fadeInUp .75s ease;
-	-webkit-animation: fadeInUp .75s ease;
-	animation-delay: .25s;
-	-webkit-animation-delay: .25s;
-	animation-fill-mode: both;
-	-webkit-animation-fill-mode: both;
 }
 
-#project-toggles {
-	margin-bottom:0
-}
-
-#project-toggles ul, #floater ul {
-	padding-left: 0; 
+#floater ul {
 	text-align: center
 }
 
-#project-toggles li, #floater li {
+#floater li {
 	display: inline-block;
 	padding-left: 15px;
 	padding-right: 15px;
 	font-size: 20px
 }
 
-#project-toggles a, #floater a {
-	letter-spacing: 1px
-}
-
-#project-toggles a:hover, #floater a:hover {
-	text-decoration: none;
-	cursor: pointer
-}
-
-#project-toggles .active, #floater .active {
-	text-shadow:.5px 0 0 #FFFFFF
+#floater a:hover {
+	cursor: pointer;
 }
 
 #contact-container {
@@ -194,53 +157,42 @@ a:hover{
 }
 
 #about{
-	background-color: #4FBCC5;
-	color: #FFFFFF;
 	text-align: center;
-	padding-top: 0px;
 	width: 100%;
+	color: white;
 }
 
 #art{
 	text-align: center;
-	margin: 0;
 	width: 100%
 }
 
 #programming{
-    background-color: #4FBCC5;
 	color: #FFFFFF;
 	text-align: center;
 	padding: 25px;
-	margin: 0;
 	width: 100%
 }
 
 #blog{
-    background-color: #4FBCC5;
-	color: #FFFFFF;
+	color: #555;
 	text-align: center;
 	padding: 25px;
-	margin: 0;
 	width: 100%
 }
 
 #resume{
-    background-color: #4FBCC5;
 	color: #FFFFFF;
 	text-align: center;
 	padding: 25px;
-	margin: 0;
 	width: 100%
 }
 
 .item {
 	display: inline-block;
-	box-sizing: border-box;
 	width: 320px;
 	margin-left: 50px;
 	margin-right: 50px;
-	margin-top: 0px;
 	margin-bottom: 50px;
 	text-align: left;
 	vertical-align: top;
@@ -249,7 +201,6 @@ a:hover{
 
 .item-art {
 	display: inline-block;
-	box-sizing: border-box;
 	margin-top: 5px; 
  	margin-bottom: 5px; 
 	text-align: left;
@@ -299,7 +250,6 @@ a:hover{
 
 img {
 	vertical-align: middle;
-	border: 0;
 }
 
 h1 {
@@ -311,6 +261,23 @@ h1 {
 	font-weight: normal;
 }
 
+h2 {
+	line-height: 1.1;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+h3 {
+	color: #FFFFFF;
+	font-style: italic;
+	font-weight: 300;
+}
+
+h5 {
+	color: #555;
+	font-weight: bold;
+	text-align: left;
+}		
+
 h6 {
 	color: #555;
 	display: block;
@@ -321,28 +288,10 @@ h6 {
 	cursor: pointer;
 }
 
-h2, .h2 {
-	line-height: 1.1;
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-
 .about-content p {
 	text-align: center;
 	display: block;
 	padding-left: 290px;
 	padding-right: 290px;
 	color: #555;
-}
-
-h4 {
-	color: #FFFFFF;
-	font-style: italic;
-	font-weight: 300;
-}
-
-h5 {
-	color: #555;
-	font-weight: bold;
-	text-align: left;
 }

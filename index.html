@@ -12,6 +12,7 @@
     <title>Ricky Rajani</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href = "functions.css" rel = "stylesheet" media = "screen">
+    <link rel="shortcut icon" href="/tab-image.ico" >
     <link rel="stylesheet" type="text/css" href="style.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>
@@ -69,6 +70,16 @@
               $("#draw").hide();
               $("#sculpture").fadeIn("slow");
             });
+            $("#hello").click(function(){
+              $("#graphic").hide();
+              $("#draw").hide();
+              $("#about").hide();
+              $("#programming").hide();
+              $("#blog").hide();
+              $("#resume").hide();
+              $("#art").hide();
+              $("#sculpture").hide();
+            });
           });
         </script> 
         <script src="js/bootstrap.min.js"></script>
@@ -78,7 +89,7 @@
       ::before
       <div class = "row" id = "greeting">
         ::before
-        <div class = "col-lg-12" style = "opacity: 1;">
+        <div class = "col-lg-12">
           <span id= "hello">
             <span class = "firstname">Ricky</span>
             <span class = "lastname">Rajani</span>
@@ -86,7 +97,9 @@
         </div>
         ::after
       </div>
+      ::after
     <div>
+    <br>
       <div class = "row" id = "floater" style = "top: 0px; position: fixed">
         <ul>
           <li>
@@ -321,7 +334,7 @@
         <img class = "img-responsive" src = "project images/personal.png">
       </div>
       <h2>This Website:</h2>
-      <h4>HTML, CSS, jQuery</h4>
+      <h3>HTML, CSS, jQuery</h3>
       <p>An ongoing project of building my personal website from scratch.</p>  
     </div>
     <div class = "item">
@@ -329,7 +342,7 @@
         <img class = "img-responsive" src = "project images/PCD.png">
       </div>
       <h2>Peace Corps Dashboard:</h2>
-      <h4>HTML and CSS</4>
+      <h3>HTML and CSS</h3>
       <p>Front-end developer for a web application that assists the Peace Corps in keeping tracking of their contributions to OpenStreetMap.</p>
     </div>
     <div class = "item">
@@ -337,7 +350,7 @@
         <img class = "img-responsive" src = "project images/Snake.jpg">
       </div>
       <h2>Snake Game:</h2>
-      <h4>Java</h4>
+      <h3>Java</h3>
       <p>The final project of the Programming Languanges and Techniques I course at Penn and my first Java game. Implementation of a 2-D array, with multiple game pieces, levels and a maze mode.</p>  
     </div>
    </div>
