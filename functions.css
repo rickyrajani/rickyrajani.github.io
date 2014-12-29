@@ -72,7 +72,7 @@ p {
 }
 
 #greeting-container {
-	margin-top: 80px;
+	margin-top: 150px;
 }
 
 #greeting {
@@ -99,7 +99,7 @@ p {
 }
 
 a:link {
-    color: #b58aa5;
+    color: #3E6DA3;
     text-decoration: none;
 }
 
