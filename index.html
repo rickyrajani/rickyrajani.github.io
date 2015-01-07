@@ -21,14 +21,14 @@
                 $("#art").hide();
                 $("#programming").hide();
                 $("#blog").hide();
-                $("#resume").hide();
+                $("#contact").hide();
                 $("#about").fadeIn("slow");
             });
             $("#art_link").click(function(){
                 $("#about").hide();
                 $("#programming").hide();
                 $("#blog").hide();
-                $("#resume").hide();
+                $("#contact").hide();
                 $("#art").fadeIn("slow");
                 $("#draw").hide();
                 $("#sculpture").hide();
@@ -38,22 +38,22 @@
                 $("#about").hide();
                 $("#art").hide();
                 $("#blog").hide();
-                $("#resume").hide();
+                $("#contact").hide();
                 $("#programming").fadeIn("slow");
             });
             $("#blog_link").click(function(){
                 $("#about").hide();
                 $("#art").hide();
                 $("#programming").hide();
-                $("#resume").hide();
+                $("#contact").hide();
                 $("#blog").fadeIn("slow");
             });
-            $("#resume_link").click(function(){
+            $("#contact_link").click(function(){
                 $("#about").hide();
                 $("#art").hide();
                 $("#programming").hide();
                 $("#blog").hide();
-                $("#resume").fadeIn("slow");
+                $("#contact").fadeIn("slow");
             });
             $("#graphic-link").click(function(){
               $("#draw").hide();
@@ -76,7 +76,7 @@
               $("#about").hide();
               $("#programming").hide();
               $("#blog").hide();
-              $("#resume").hide();
+              $("#contact").hide();
               $("#art").hide();
               $("#sculpture").hide();
             });
@@ -111,12 +111,15 @@
           <a href = "#" id = "blog_link">Blog</a>
         </li>
         <li>
-          <a href="Resume.pdf">Resume</a>
+          <a href = "#" id = "contact_link">Contact</a>
         </li>
+<!--         <li>
+          <a href="Resume.pdf">Resume</a>
+        </li> -->
       </ul>
     </div>
     <div class = "about-content" id = "about" style = "display: none;">
-      <h1> Hi there, I'm Ricky</h1>
+      <h1> Hi, I'm Ricky</h1>
       <p> I'm a freshmen studying 
         <a target = "blank_" href = "http://cg.cis.upenn.edu/dmd_program.html">Digital Media Design</a> 
          at the University of Pennsylvania. I love good food, books, design, and traveling. I make art, take 
@@ -125,14 +128,14 @@
         <a target = "blank_" href = "http://genheration.com/tech-talk/">tech</a>
         in my free time.
       </p>
-      <p>
-        <a target = "blank_" href = "mailto:rickys.rajani@gmail.com?Subject=Hello%20"><font color="3E6DA3">Want to chat?</font></a>
+<!--       <p>
+        <a href = "mailto:rickys.rajani@gmail.com?Subject=Hello%20"><font color="3E6DA3">Want to chat?</font></a>
       </p>
       <br>
       <h1>Find me on:</h1>
-         <a href = "https://github.com/rickyrajani/"><font color="3E6DA3">github</font></a>
-         ||
-         <a href = "https://www.linkedin.com/pub/ricky-rajani/73/64b/b25"><font color="3E6DA3" >linkedin</font></a>
+      <a target = "blank_" href = "https://github.com/rickyrajani/"><font color="3E6DA3">github</font></a>
+      ||
+      <a target = "blank_" href = "https://www.linkedin.com/pub/ricky-rajani/73/64b/b25"><font color="3E6DA3" >linkedin</font></a> -->
     </div>
     <div id = "art" style = "display: none;">
        <div id = "graphic-link">
@@ -355,8 +358,18 @@
         <a target = "blank_" href = "http://rickyrajani.wordpress.com/">wordpress.</a>
       </p>
     </div>
-    <div id = "resume" style = "display:none;"></div>
-<!--      <div class = "container" id = "contact-container">
+    <div id = "contact" style = "display:none;">
+      <h1>
+        <a href = "mailto:rickys.rajani@gmail.com?Subject=Hello%20">Want to chat?</a>
+      </h1>
+      <br>
+      <h1>Find me on:</h1>
+      <a target = "blank_" href = "https://github.com/rickyrajani/"><font color="3E6DA3">github</font></a>
+      ||
+      <a target = "blank_" href = "https://www.linkedin.com/pub/ricky-rajani/73/64b/b25"><font color="3E6DA3" >linkedin</font></a>
+    </div>
+<!--    <div id = "resume" style = "display:none;"></div>
+      <div class = "container" id = "contact-container">
        <div class = "row title">
          <a href = "mailto:rickys.rajani@gmail.com?Subject=Hello%20" target="_top"><font color="3E6DA3">want to chat?</font></a>
        </div>

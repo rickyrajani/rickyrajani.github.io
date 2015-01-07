@@ -98,13 +98,16 @@ p {
 	color: white;
 }
 
-a:link {
+a:link, a:visited {
     color: #3E6DA3;
     text-decoration: none;
 }
 
-a:visited{
-    color: #3E6DA3;
+h1 a:hover {
+	color: #3E6DA3;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 300;
 }
 
 a:hover{
@@ -181,7 +184,7 @@ a:hover{
 	width: 100%
 }
 
-#resume{
+#contact{
 	color: #FFFFFF;
 	text-align: center;
 	padding: 25px;
