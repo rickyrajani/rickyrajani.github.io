@@ -12,7 +12,7 @@ body {
 
 h1 {
 	font-weight: 200;
-	color: #54E497;
+	color: #11D56C;
 	margin: 20px 0 0 0;
 }
 
@@ -35,7 +35,8 @@ h3 {
 
 .sub-content {
 	margin: 50px auto 100px auto;
-	width: 640px;
+	width: 100%;
+	max-width: 640px;
 	text-align: center;
 	display: none;
 }
@@ -88,7 +89,7 @@ h3 {
 .nav-link {
 	text-align: center;
 	width: auto;
-	color: #54E497;
+	color: #11D56C;
 	display: inline-block;
 	position: relative;
 	cursor: pointer;
