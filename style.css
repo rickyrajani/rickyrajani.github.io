@@ -36,9 +36,12 @@ h3 {
 .sub-content {
 	margin: 50px auto 100px auto;
 	width: 100%;
-	max-width: 640px;
 	text-align: center;
 	display: none;
+}
+ 
+#about {
+	max-width: 640px;
 }
 
 #byline {
