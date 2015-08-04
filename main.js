@@ -5,7 +5,7 @@ $(document).ready(function(){
         $(this).animate({opacity: 1.0, top: "+=5px"}, 200);
     });
 
-    $('.home').hover(function(){
+    $('.logo').hover(function(){
         $(this).animate({opacity: 0.6}, 200);
     },function(){
         $(this).animate({opacity: 1.0}, 200);
@@ -14,15 +14,15 @@ $(document).ready(function(){
 });
 
 function showContent(id) {
-	$('.sub-content').fadeOut('slow');
+    $('.sub-content').fadeOut('slow');
 
     setTimeout(function(){
-		$(id).fadeIn('slow');
-		focusBlock(id);
-	}, 500);
+        $(id).fadeIn('slow');
+        focusBlock(id);
+    }, 500);
 
-	$('#byline').animate({
-    	'margin-top': 100,
+    $('#byline').animate({
+        'margin-top': 100,
     }, 'slow');
 
 }
@@ -40,6 +40,6 @@ function hideContent() {
 
 function focusBlock(id) {
     $('#byline').animate({
-    	'margin-top': 100,
+        'margin-top': 100,
     }, "slow");
 }
