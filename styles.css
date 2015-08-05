@@ -35,18 +35,16 @@ html {
 	text-align: center;
 }
 
-#boxes {
+#nav {
 	margin-top: 3vh;
 	display: inline-table;
 	text-decoration: none;
-	font-family: "Montserrat", sans-serif;
 	font-weight: 700;
-	font-size: 2vmin;
 	letter-spacing: 0.025em;
 	list-style-type: none;
 }
 
-#boxes li {
+#nav li {
 	display: inline;
     float: left;
     width: 15vmin;
@@ -60,14 +58,14 @@ html {
     font-size: 16px;
 }
 
-	#boxes li:hover{
+	#nav li:hover{
 		border: 2px solid #BBB;
 		background-color: #BBB;
 		opacity: 0.8;
 		cursor: pointer;
 }
 
-#boxes a {
+#nav a {
 	text-decoration: none;
 	color: white;
     line-height: 15vmin;
@@ -78,22 +76,23 @@ html {
 		margin-top: 5vh;
 	}
 
-	.boxes {
+	.nav {
 		margin-left: -10vmin;
 	}
 
-	.boxes li {
+	.nav li {
 		clear: left;
 		width: 80vmin;
 		font-size: 4vmin;
 	}
 
-	.boxes a {
+	.nav a {
 		line-height: 8vmin;
 	}
 }
 
 .logo {
+	cursor: pointer;
 	width: 150px;
 }
 
@@ -169,14 +168,6 @@ form {
 }
 
 #byline {
-	text-transform: uppercase;
-	font-size: 35px;
-	margin: 200px auto 0 auto;
-	letter-spacing: 2px;
-	width: auto;
-	text-align: center;
-	font-weight: 300;
-	cursor: pointer;
     animation: fadeInUp .75s ease;
     -webkit-animation: fadeInUp .75s ease;
     animation-delay: .25s;
