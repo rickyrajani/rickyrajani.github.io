@@ -27,6 +27,9 @@ html {
 
 .sub-content a {
 	color: black;
+    outline: none;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .content {
