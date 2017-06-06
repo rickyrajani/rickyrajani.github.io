@@ -15,6 +15,16 @@ function showContent(caller, id) {
             $('.photo').css("display","none");
         }, 500);
     }
+    else if(id =='#Sculpture') {
+        $('#title').html(id.substring(1) + "<span>Click the images for full view.</span>");
+        setTimeout(function(){
+            //$(id).fadeIn('slow');
+            $('figure.sculp').fadeIn('slow').css("display","inline-block");
+            $('.credit').fadeIn('slow').css("display","inline");
+            // temp
+            $('.photo').css("display","none");
+        }, 500);
+    }
     else if(id == '#3DModeling') {
         $('#title').html(id.substring(1,3)+" "+id.substring(3) + "<span>Click the images for full view.</span>");
         setTimeout(function(){
