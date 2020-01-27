@@ -1,64 +1,68 @@
 <!DOCTYPE html>
 <html lang ="en">
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="description" content="My name is Ricky Rajani and I'm a software engineer and artist. This is my personal website.">
-		<meta name="keywords" content="Ricky, Rajani, DMD, UPenn, Penn, Programming, Art, Design"/>
+		<meta name="keywords" content="Ricky, Rajani, DMD, UPenn, Penn, Programming, Art, Design, Oculus, Virtual Reality"/>
 		<meta name="author" content="Ricky Rajani"/>
-		<link rel="shortcut icon" src = "Images/favicon.ico" type = "image/x-icon"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+		<link rel="manifest" href="Favicon/site.webmanifest">
+		
 		<link rel="stylesheet" type="text/css" href="styles.css"/>
-		<title>Ricky Rajani</title>
+		<title>RICKY RAJANI</title>
 	</head>
 
 	<body>
-		<div class="content" id="byline">
-			<div onclick="hideContent();">
-				<img class ="logo" src ="Images/Initials.png"></img>
-			</div>
-			<ul class = "nav-link" id="nav">
-				<li onclick="showContent('#about');">
-			    	about
-			    </li>
-			    <li>
-			    	<a href="Portfolio">portfolio</a>
-			    </li>
-			    <li>
-			    	<a href="http://ricky.tumblr.com/" target ="blank_">blog</a>
-			    </li>
-			    <li onclick="showContent('#contact');">
-			    	contact
-			    </li>
-			</ul>
-			
-			<div class="sub-content" id="about">
-				<h2>Hi! I'm Ricky</h2>
-				<p> I'm a software engineer at Oculus VR and an artist on the side. I graduated with Bachelor of Science in Engineering in  
-	        		<a target = "blank_" href = "http://cg.cis.upenn.edu/dmd_program.html">Digital Media Design</a> 
-	         		from the University of Pennsylvania. I love good books, design, and traveling. I often can be found doodling in my sketchbook, taking photos and writing about 
-	        		<a target = "blank_" href = "http://genheration.com/tech-talk/">tech</a>. Occasionally, I've been known to wear the 'dancer' hat, as well.
-	      		</p>
-	      		<p>
-	      			<a href = "Images/Resume.pdf">Resume here.</a>
-	      		</p>
-				<h2>Find me on:</h2>
-	      		<a target = "blank_" href = "https://github.com/rickyrajani/">github</a>
-	      		|
-	      		<a target = "blank_" href = "https://www.linkedin.com/pub/ricky-rajani/73/64b/b25">linkedin</a>
-		    </div>
+		<div id="content">
+			<section id="landing" onclick="hideContent();">
+				<a href="index.html" style="color:#000"><h1 style="font-size: 35px;margin-bottom: 0px; letter-spacing: 1px; text-align: right; color:#000">RICKY RAJANI</h1></a>
+				<h2>engineer, artist</h2>
 
-		    <div class="sub-content" id="contact">
-		    	<h2>Want to get in touch? Contact me!</h2>
-		    	<form name="contact" action="http://formspree.io/rickys.rajani@gmail.com" method="POST" id="contact-form">
-	                <input class="field" name="name" placeholder="Name" required>
-	                <input class="field" name="email" type="email" placeholder="Email" required>
-	                <textarea class="field" id="message" name="message" placeholder="Message" required></textarea>
-	                <input id="submit" name="submit" type="submit" value="SUBMIT" class="button">
-		    	</form>
-		    </div>
+				<div class="sub-content" id="about" style="text-align: right; width: 400px; font-size: 12px;padding-top: 20px;">
+					<p>
+						I am a San Francico-based software engineer at Oculus VR.<br>
+						I graduated from the University of Pennsylvania<br> w/ a Bachelor of Science in Engineering in<br>
+						<a target = "blank_" href = "http://cg.cis.upenn.edu/dmd_program.html">Computer Graphics</a> and a minor in Fine Arts.<br>
+						I'm an artist on the side, working on traditional and digital art.<br>
+						Occasionally, I've been known to wear the 'dancer' hat, as well.
+					</p>
+				</div>
+	
+				<div class="sub-content" id="contact" style="text-align: right; width: 400px; font-size: 12px;padding-top: 20px;">
+					<p>
+						Let's talk: <a href="mailto:webmaster@example.com">rickys.rajani@gmail.com</a><br>
+					</p>
+					<p>
+						Find me on:
+						<a target="_blank" href="https://github.com/rickyrajani/">
+							github
+						</a>
+						|
+						<a target="_blank" href="https://www.linkedin.com/pub/ricky-rajani/73/64b/b25">
+							linkedin
+						</a>
+					</p>
+				</div>
+			</section>
+
+			<section id="nav">
+				<div id="about-link" class="nav-link" onclick="showContent('#about');"><h1>About</h1></div>
+				<div id="portfolio-link" class="nav-link"><a href="Portfolio"><h1>Portfolio</h1></a></div>
+				<div id="resume-link" class="nav-link"><a href="Images/Resume.pdf"><h1>Resume</h1></a></div>
+				<div id="contact-link" class="nav-link" onclick="showContent('#contact');"><h1>Contact</h1></div>
+			</section>
 		</div>
 	</body>
-
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="main.js"></script>
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
 
 </html>
